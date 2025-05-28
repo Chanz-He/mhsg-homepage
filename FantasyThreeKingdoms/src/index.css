@@ -1,0 +1,21 @@
+body{
+  background-image: url(./images/mobile.png);
+  background-repeat: no-repeat;      
+  background-size: 100%; 
+}
+
+img,
+svg {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  &::selection {
+    background-color: rgba(255, 204, 62, .25);
+    color: #ffcc3e;
+  }
+}
