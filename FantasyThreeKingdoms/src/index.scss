@@ -1,0 +1,126 @@
+@import './styles/utils.scss';
+
+body {
+  background-image: url('./images/web.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+img,
+svg {
+  width: 100%;
+}
+
+img {
+  display: block;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-image: none;
+    background-color: #390B88;
+    background-image: url(./images/mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: mvw(24);
+  }
+
+  .title {
+    margin-top: mvw(70);
+
+    img {
+      width: mvw(197);
+      height: mvw(151);
+    }
+  }
+
+  .android {
+    margin-top: mvw(212);
+    margin-bottom: mvw(25);
+    width: mvw(177);
+    height: mvw(48);
+  }
+
+  .apple {
+    width: mvw(177);
+    height: mvw(48);
+  }
+
+  .exclusive {
+    margin-top: mvw(56);
+    border-radius: mvw(12);
+  }
+
+  .exclusiveMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #87422B;
+  }
+
+  .r99999 {
+    width: mvw(148);
+    height: mvw(60);
+    margin-bottom: mvw(3);
+  }
+
+  .receive {
+    color: #fff;
+    opacity: 0.4;
+    font-size: mvw(14);
+    font-weight: 600;
+    margin-bottom: mvw(16);
+  }
+
+  .invitationCode {
+    width: mvw(150);
+    height: mvw(34);
+
+    margin-bottom: mvw(28);
+  }
+
+  .gift {
+
+    font-weight: 500;
+    font-size: mvw(12);
+    line-height: mvw(17);
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.6;
+    text-shadow: 0.779844px 0px 2.33953px rgba(0, 0, 0, 0.35), 0px 0.779844px 1.55969px rgba(0, 0, 0, 0.24), 0px 0.779844px 0.779844px rgba(0, 0, 0, 0.22), 0px 0.779844px 1.55969px rgba(0, 0, 0, 0.2);
+    margin-top: mvw(8);
+  }
+
+  .giftPack{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: mvw(24);
+  }
+
+  .giftPackWord {
+    margin-top: mvw(27);
+    font-weight: 600;
+    font-size: mvw(18);
+    line-height: mvw(26);
+    color: #FFFFFF;
+    text-shadow: 1.02128px 0px 3.06383px rgba(0, 0, 0, 0.35), 0px 1.02128px 2.04256px rgba(0, 0, 0, 0.24), 0px 1.02128px 1.02128px rgba(0, 0, 0, 0.22), 0px 1.02128px 2.04256px rgba(0, 0, 0, 0.2);
+  }
+}

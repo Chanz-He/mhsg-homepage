@@ -1,69 +1,6 @@
 @use "sass:math";
 
-
 @function mvw($x) {
   @return calc(math.div($x, 375) * 100vw);
 }
 
-
-@mixin flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-@mixin flex-column-center {
-  @include flex-column;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin hideScrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
-  -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
-
-  ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
-}
-
-@mixin blur($x) {
-  backdrop-filter: blur(#{$x});
-  -webkit-backdrop-filter: blur(#{$x});
-}
-
-@mixin fillText($x) {
-  background: $x;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  user-select: none;
-}
-
-$breakPoints: (
-  'web': 901,
-  'mobile': 900
-);
-
-@mixin media($device) {
-  $size: map-get($breakPoints, $device);
-
-  @if $device == 'web' {
-    @media screen and (min-width: #{$size}px) {
-      @content;
-    }
-  } @else if $device == 'mobile' {
-    @media screen and (max-width: #{$size}px) {
-      @content;
-    }
-  }
-}
