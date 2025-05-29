@@ -223,7 +223,7 @@ a {
     transform: translate(-50%, 72%) rotate(90deg);
 
     @include media('web') {
-      bottom: -38px;
+      bottom: 4%;
       width: 59.27px;
       height: 205.88px;
     }
