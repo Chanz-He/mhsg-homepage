@@ -162,6 +162,13 @@ body {
 }
 
 a {
+  cursor: pointer;
+  transition: transform .3s;
+
+  &:hover {
+    transform: scale(0.95);
+  }
+
   &:active {
     transform: scale(0.9);
   }
