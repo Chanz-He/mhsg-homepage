@@ -1,4 +1,8 @@
-@import './styles/utils.scss';
+@use "sass:math";
+
+@function mvw($x) {
+  @return calc(math.div($x, 375) * 100vw);
+}
 
 body {
   background-image: url('./images/web.png');

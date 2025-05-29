@@ -1,6 +1,0 @@
-@use "sass:math";
-
-@function mvw($x) {
-  @return calc(math.div($x, 375) * 100vw);
-}
-
