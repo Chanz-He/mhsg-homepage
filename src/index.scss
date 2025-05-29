@@ -27,10 +27,11 @@ $breakPoint: (
 }
 
 @mixin hideScrollbar {
-  scrollbar-width: thin;
+  scrollbar-width: none;
   scrollbar-color: transparent transparent;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
+  -webkit-overflow-scrolling: touch;
 
   &::-webkit-scrollbar {
     width: 0;
