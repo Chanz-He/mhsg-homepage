@@ -97,7 +97,29 @@ body {
 
   @include media('web') {
     height: 100vh;
-    background-image: url('./assets/images/web-bg.png');
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center bottom;
+    }
+
+    &::after {
+      z-index: 2;
+      background-image: url('./assets/images/web-bg.png');
+    }
+
+    &::before {
+      z-index: 1;
+      background-image: url('./assets/images/web-bg-min.png');
+    }
   }
   
   @include media('mobile') {
