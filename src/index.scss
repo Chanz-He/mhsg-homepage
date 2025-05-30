@@ -91,25 +91,22 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+  }
 
   @include media('web') {
     height: 100vh;
-
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center bottom;
-    }
 
     &::after {
       z-index: 2;
@@ -124,7 +121,16 @@ body {
   
   @include media('mobile') {
     height: mvw(813);
-    background-image: url('./assets/images/mobile-bg.png');
+
+    &::after {
+      z-index: 2;
+      background-image: url('./assets/images/mobile-bg.png');
+    }
+
+    &::before {
+      z-index: 1;
+      background-image: url('./assets/images/mobile-bg-min.png');
+    }
   }
 }
 
