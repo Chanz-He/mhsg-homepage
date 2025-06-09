@@ -56,15 +56,14 @@ const showNotification = (message) => {
 function App() {
   const onDownLoad = (type) => {
     const url = getDownLoadUrl(type)
-    // window.gtag('event', 'sign_up_button_click', {
-    //   'event_category': 'User Interaction',
-    //   'event_label': 'Sign Up',
-    //   'value': 1
-    // });
+    // @ts-ignore
+    window.gtag('event', `${type}_download`);
     window.location.href = url
   }
 
   const onCopy = async() => {
+    // @ts-ignore
+    window.gtag('event', `copy_invitation_code`);
     await navigator.clipboard.writeText('R99999');
     showNotification('复制成功')
   }
