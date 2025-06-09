@@ -30,7 +30,7 @@ const getDownLoadUrl = (type) => {
     case 'android':
       return 'https://s3.dualstack.ap-southeast-1.amazonaws.com/menghuansg.com/CDN/GameApk/sanguo.apk'
     case 'ios':
-      return 'https://app.oss.aldff.cn/wgbmdh?t=1749452246'
+      return 'https://downpack.net/cpPRV1'
     default:
       return ''
   }
@@ -56,6 +56,11 @@ const showNotification = (message) => {
 function App() {
   const onDownLoad = (type) => {
     const url = getDownLoadUrl(type)
+    // window.gtag('event', 'sign_up_button_click', {
+    //   'event_category': 'User Interaction',
+    //   'event_label': 'Sign Up',
+    //   'value': 1
+    // });
     window.location.href = url
   }
 
