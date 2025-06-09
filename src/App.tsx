@@ -30,7 +30,7 @@ const getDownLoadUrl = (type) => {
     case 'android':
       return 'https://s3.dualstack.ap-southeast-1.amazonaws.com/menghuansg.com/CDN/GameApk/sanguo.apk'
     case 'ios':
-      return 'itms-services://?action=download-manifest&url=https://a-x.ppbao.cloud/plist/567.plist'
+      return 'https://app.oss.aldff.cn/wgbmdh?t=1749452246'
     default:
       return ''
   }
