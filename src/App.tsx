@@ -2,10 +2,9 @@ import './index.scss'
 import LogoImage from '@/assets/images/logo.png'
 import AndroidButtonImage from '@/assets/images/android-button.png'
 import IosButtonImage from '@/assets/images/ios-button.png'
-import YellowImg0Image from '@/assets/images/yellow-img-0.png'
-import YellowImg1Image from '@/assets/images/yellow-img-1.png'
-import YellowImg2Image from '@/assets/images/yellow-img-2.png'
-import YellowImg3Image from '@/assets/images/yellow-img-3.png'
+import UpdateListImage from '@/assets/images/update-list.png'
+import GameGroupImage from '@/assets/images/game-group.png'
+import YellowCardBgImage from '@/assets/images/yellow-bg.png'
 import YellowImg4Image from '@/assets/images/yellow-img-4.png'
 import YellowImg5Image from '@/assets/images/yellow-img-5.png'
 import YellowImg6Image from '@/assets/images/yellow-img-6.png'
@@ -13,7 +12,7 @@ import YellowImg7Image from '@/assets/images/yellow-img-7.png'
 import YellowImg8Image from '@/assets/images/yellow-img-8.png'
 import YellowImg9Image from '@/assets/images/yellow-img-9.png'
 import YellowImg10Image from '@/assets/images/yellow-img-10.png'
-import PurpleImg0Image from '@/assets/images/purple-img-0.png'
+import PurpleCardBgImage from '@/assets/images/purple-bg.png'
 import PurpleImg1Image from '@/assets/images/purple-img-1.png'
 import PurpleImg2Image from '@/assets/images/purple-img-2.png'
 import PurpleImg3Image from '@/assets/images/purple-img-3.png'
@@ -24,6 +23,73 @@ import PurpleImg7Image from '@/assets/images/purple-img-7.png'
 import PurpleImg8Image from '@/assets/images/purple-img-8.png'
 import SuccessImage from '@/assets/images/success.png'
 import { toast, ToastContainer } from 'react-toastify'
+
+const updateList = `
+  <div>元神功能正式上线，所有17级以上玩家，完成主线任务《赤兔追风化元神》后即可解锁元神功能，欢迎大家体验。目前仅开放了部分元神内容，包括元神的鉴定、获取，升级等。其余功能将陆续上线，敬请期待。由于元神系统过于庞大且复杂，可能会在体验过程中发现诸多不完善或者有BUG的地方，望大家多多海涵，可在第一时间向我们反馈，感激不尽。</div>
+  <br/>
+  <div class='text-yellow'>新增内容：</div>
+  <div>
+    <div>1、下架六级翅膀及特四级翅膀、特殊五级翅膀兑换道具。</div>
+    <div>2、新增1-10阶元神精元。</div>
+    <div>3、新增元神扭蛋机，玩家可通过蛋积分兑换炫酷的元神皮肤。</div>
+    <div>4、新增61-80级装备。</div>
+    <div>5、新增各个职业70级与80级职业技能。</div>
+    <div>6、新增元神相关副职业配方与道具。</div>
+    <div>7、商城新增元神相关道具。</div>
+    <div>8、商城新增符鬼外观道具。</div>
+    <div>9、新增70级与80级装备打造配方与道具。</div>
+    <div>10、增加60级-80级怪物掉落。</div>
+  </div>
+  <div class='text-yellow'>优化调整：</div>
+  <div>
+    <div>1、重新调整各个职业技能伤害系数。</div>
+    <div>2、为配合新版本强度，重新调整了怪物属性。</div>
+    <div>3、优化服务性能，提升游戏流畅度。</div>
+  </div>
+  <div class='font-600'>【6月5日更新】</div>
+  <div class='text-green'>修复BUG：</div>
+  <div>1、修复部分仙术师技能施放时未能正确限时特效。</div>
+  <div class='font-600'>【6月1日更新】</div>
+  <div class='text-green'>修复BUG：</div>
+  <div>1、修复此前组队状态与非组队状态怪物经验结算错误。</div>
+  <div>2、修复个别等级BOSS经验异常，确保BOSS产出经验与等级匹配。</div>
+  <div>3、暂时下架道具<置身事外丸>。</div>
+  <div>4、暂时限制制符师配方<置身事外符>使用。</div>
+  <div>5、下调<置身事外丸>、<置身事外符>的持续时间为1分钟。</div>
+  <div class='font-600'>【5月23日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、工资商店新增商品：中级精钢矿锄、中级花蒲木耙。</div>
+  <div class='font-600'>【5月22日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、为避免误操作，修改所有红色品质装备为不可出售。</div>
+  <div class='text-green'>修复BUG：</div>
+  <div>1、修复精华提升属性周限制次数异常。</div>
+  <div class='font-600'>【5月21日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、调整精华提升属性的方式，使得玩家可以在满级后依然可以使用精华积攒经验。</div>
+  <div class='font-600'>【5月15日更新】</div>
+  <div class='text-green'>修复BUG：</div>
+  <div>1、修复道具<催神丸>效果异常。</div>
+  <div>2、修复促力丸，必伤散，瞬风露描述不正常。</div>
+  <div class='font-600'>【5月14日更新】</div>
+  <div class='text-green'>修复BUG：</div>
+  <div>1、修复道具<催神丸>效果异常。</div>
+  <div>2、修复部分副本怪物属性异常。</div>
+  <div class='font-600'>【5月12日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、新增玩家特效屏蔽功能，可在PK开启界面进行设置。</div>
+  <div class='text-green'>修复BUG：</div>
+  <div>1、修复切线后聊天记录未保存问题。</div>
+  <div>2、修复线路负载状态未正常显示。</div>
+  <div class='font-600'>【5月10日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、豪杰职业优化1：重新调整了大部分技能的释放逻辑，以期技能释放节奏更加灵动。</div>
+  <div>2、豪杰职业优化2：降低技能<霸王斧>的冷却时间，同时增加了其眩晕的持续时间。</div>
+  <div>3、新增江陵干货商售卖商品：美味家常食谱。</div>
+  <div>4、重构游戏客户端资源，及加载方式。</div>
+  <div class='text-green'>修复BUG：</div>
+  <div>1、修复服务器异常卡顿问题。</div>
+`
 
 const getDownLoadUrl = (type) => {
   switch (type) {
@@ -61,10 +127,10 @@ function App() {
     window.location.href = url
   }
 
-  const onCopy = async() => {
+  const onCopy = async(str, isInvitationCode = false) => {
     // @ts-ignore
-    window.gtag('event', `copy_invitation_code`);
-    await navigator.clipboard.writeText('R99999');
+    window.gtag('event', isInvitationCode? `copy_invitation_code`: `copy_qq_group_id`);
+    await navigator.clipboard.writeText(str);
     showNotification('复制成功')
   }
 
@@ -84,24 +150,27 @@ function App() {
               <img src={IosButtonImage} />
             </a>
           </div>
-          <div className='card yellow'>
-            <div className='bottom-border' />
-            <div className='bottom-bg' />
-            <div className='left-bg' />
-            <div className='right-bg' />
-            <CardTitle>
-              <img src={YellowImg0Image} />
-            </CardTitle>
+          <div className='update-list'>
+            <div className='img'>
+              <img src={UpdateListImage} />
+            </div>
+            <div className='text' dangerouslySetInnerHTML={{ __html: updateList }} />
+          </div>
+          <div className='game-group'>
+            <div className='img'>
+              <img src={GameGroupImage} />
+            </div>
+            <div className='text'>
+              <div onClick={() => onCopy('854611971')}>854611971</div>
+              <div onClick={() => onCopy('1050752511')}>1050752511</div>
+              <div onClick={() => onCopy('854611971')}>854611971</div>
+            </div>
+          </div>
+          <div className='yellow-card'>
+            <div className='card-bg'>
+              <img src={YellowCardBgImage} />
+            </div>
             <div className='card-main'>
-              <div className='img-1'>
-                <img src={YellowImg1Image} />
-              </div>
-              <div className='img-2'>
-                <img src={YellowImg2Image} />
-              </div>
-              <a className='img-3' onClick={onCopy}>
-                <img src={YellowImg3Image} />
-              </a>
               <div className='img-4'>
                 <img src={YellowImg4Image} />
               </div>
@@ -117,7 +186,7 @@ function App() {
               <div className='img-8'>
                 <img src={YellowImg8Image} />
               </div>
-              <div className='img-9'>
+              <div className='img-9'onClick={() => onCopy('R99999')}>
                 <img src={YellowImg9Image} />
               </div>
               <div className='img-10'>
@@ -126,14 +195,10 @@ function App() {
             </div>
           </div>
 
-          <div className='card purple'>
-            <div className='bottom-border' />
-            <div className='bottom-bg' />
-            <div className='left-bg' />
-            <div className='right-bg' />
-            <CardTitle>
-              <img src={PurpleImg0Image} />
-            </CardTitle>
+          <div className='purple-card'>
+            <div className='card-bg'>
+              <img src={PurpleCardBgImage} />
+            </div>
             <div className='card-main'>
               <div className='img-1'>
                 <img src={PurpleImg1Image} />
@@ -164,8 +229,8 @@ function App() {
           </div>
 
           <div className='footer'>
-            <div><b>游戏交流群:</b>854611971</div>
-            <div>进群备注三国手游</div>
+            <div>游戏内涉及账号、装备等道具交易需仔细，谨防诈骗！</div>
+            <div>menghuansanguo.com © 2025</div>
           </div>
         </div>
       </div>
@@ -180,16 +245,6 @@ function App() {
         autoClose={3000}
       />
     </>
-  )
-}
-
-
-const CardTitle = ({ children }) => {
-  return (
-    <div className='title'>
-      <div className='text'>{children}</div>
-      <div className='border' />
-    </div>
   )
 }
 
