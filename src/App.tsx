@@ -163,7 +163,7 @@ function App() {
             <div className='text'>
               <div onClick={() => onCopy('854611971')}>854611971</div>
               <div onClick={() => onCopy('1050752511')}>1050752511</div>
-              <div onClick={() => onCopy('854611971')}>854611971</div>
+              <div onClick={() => onCopy('1004937282')}>1004937282</div>
             </div>
           </div>
           <div className='yellow-card'>
