@@ -27,6 +27,25 @@ import { toast, ToastContainer } from 'react-toastify'
 const updateList = `
   <div>元神功能正式上线，所有17级以上玩家，完成主线任务《赤兔追风化元神》后即可解锁元神功能，欢迎大家体验。目前仅开放了部分元神内容，包括元神的鉴定、获取，升级等。其余功能将陆续上线，敬请期待。由于元神系统过于庞大且复杂，可能会在体验过程中发现诸多不完善或者有BUG的地方，望大家多多海涵，可在第一时间向我们反馈，感激不尽。</div>
   <br/>
+  <div class='font-600'>【6月16日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、新增经验BOSS活动，在襄阳南郊、江夏西郊、临江东郊，随机刷新：关羽、张飞、赵云、马超、黄忠，击杀后会获得一定数量超级张飞扭蛋大补丸。华容道、五丈原，随机刷新：真•关羽、真•张飞、真•赵云、真•马超、真•黄忠，击杀后会获得一定数量五虎经验丸，使用获得超级张飞扭蛋大补丸10倍的经验！</div>
+  <div class='text-green'>修复BUG：</div>
+  <div>1、修复元神技能：＜沉稳>、＜不动如山＞、＜皮糙肉厚＞、＜豪门意气＞、＜坚守＞、＜庇护>等防御加成属性表现异常。</div>
+  <div>2、修复九阶元神升级十阶元神时，保留技能BUG。</div>
+  <br/>
+  <div class='font-600'>【6月15日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、新增经验大放送活动，持续到6月30日，活动期间30级以上玩家击杀怪物所得经验提升100%。（使用后直接获得经验类道具不参与活动）</div>
+  <div>2、开启功能：交易、寄卖、属性精华、抗性升级。</div>
+  <div>3、重新优化了所有伤害结算数值。</div>
+  <div>4、重新调整了部分职业的伤害。</div>
+  <div>5、重新优化元神皮肤属性加成。</div>
+  <div class='text-green'>修复BUG：</div>
+  <div>1、修复了玩家通过非法手段刷道具的BUG，并封禁了大量账号。</div>
+  <div>2、修复经验类道具使用时，显示增加值比实际增加值少。</div>
+  <div>3、修复交易功能可能导致的道具异常丢失。</div>
+  <br/>
   <div class='text-yellow'>新增内容：</div>
   <div>
     <div>1、下架六级翅膀及特四级翅膀、特殊五级翅膀兑换道具。</div>
@@ -46,9 +65,11 @@ const updateList = `
     <div>2、为配合新版本强度，重新调整了怪物属性。</div>
     <div>3、优化服务性能，提升游戏流畅度。</div>
   </div>
+  <br/>
   <div class='font-600'>【6月5日更新】</div>
   <div class='text-green'>修复BUG：</div>
   <div>1、修复部分仙术师技能施放时未能正确限时特效。</div>
+  <br/>
   <div class='font-600'>【6月1日更新】</div>
   <div class='text-green'>修复BUG：</div>
   <div>1、修复此前组队状态与非组队状态怪物经验结算错误。</div>
@@ -56,31 +77,38 @@ const updateList = `
   <div>3、暂时下架道具<置身事外丸>。</div>
   <div>4、暂时限制制符师配方<置身事外符>使用。</div>
   <div>5、下调<置身事外丸>、<置身事外符>的持续时间为1分钟。</div>
+  <br/>
   <div class='font-600'>【5月23日更新】</div>
   <div class='text-yellow'>新增优化：</div>
   <div>1、工资商店新增商品：中级精钢矿锄、中级花蒲木耙。</div>
+  <br/>
   <div class='font-600'>【5月22日更新】</div>
   <div class='text-yellow'>新增优化：</div>
   <div>1、为避免误操作，修改所有红色品质装备为不可出售。</div>
   <div class='text-green'>修复BUG：</div>
   <div>1、修复精华提升属性周限制次数异常。</div>
+  <br/>
   <div class='font-600'>【5月21日更新】</div>
   <div class='text-yellow'>新增优化：</div>
   <div>1、调整精华提升属性的方式，使得玩家可以在满级后依然可以使用精华积攒经验。</div>
+  <br/>
   <div class='font-600'>【5月15日更新】</div>
   <div class='text-green'>修复BUG：</div>
   <div>1、修复道具<催神丸>效果异常。</div>
   <div>2、修复促力丸，必伤散，瞬风露描述不正常。</div>
+  <br/>
   <div class='font-600'>【5月14日更新】</div>
   <div class='text-green'>修复BUG：</div>
   <div>1、修复道具<催神丸>效果异常。</div>
   <div>2、修复部分副本怪物属性异常。</div>
+  <br/>
   <div class='font-600'>【5月12日更新】</div>
   <div class='text-yellow'>新增优化：</div>
   <div>1、新增玩家特效屏蔽功能，可在PK开启界面进行设置。</div>
   <div class='text-green'>修复BUG：</div>
   <div>1、修复切线后聊天记录未保存问题。</div>
   <div>2、修复线路负载状态未正常显示。</div>
+  <br/>
   <div class='font-600'>【5月10日更新】</div>
   <div class='text-yellow'>新增优化：</div>
   <div>1、豪杰职业优化1：重新调整了大部分技能的释放逻辑，以期技能释放节奏更加灵动。</div>
