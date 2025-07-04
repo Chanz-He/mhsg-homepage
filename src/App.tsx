@@ -27,6 +27,34 @@ import { toast, ToastContainer } from 'react-toastify'
 const updateList = `
   <div>元神功能正式上线，所有17级以上玩家，完成主线任务《赤兔追风化元神》后即可解锁元神功能，欢迎大家体验。目前仅开放了部分元神内容，包括元神的鉴定、获取，升级等。其余功能将陆续上线，敬请期待。由于元神系统过于庞大且复杂，可能会在体验过程中发现诸多不完善或者有BUG的地方，望大家多多海涵，可在第一时间向我们反馈，感激不尽。</div>
   <br/>
+  <div class='font-600' style='color: #FF8C52;'>《合服详细内容》</div>
+  <div>为提升游戏氛围与玩家体验，我们决定于<span class='text-green'>2025年7月10日10:00</span>，进行服务器合并操作，预计需要1~2天！届时我们将把 <span class='text-yellow'>＜桃园结义>、＜群雄逐鹿>、＜赤壁之战></span> 合并为1个大区，其中<span class='text-yellow'><桃园结义></span>将作为主服务器，另外两个服务器的所有玩家数据将全部并入主服务器中。具体规则如下：</div>
+  <div class='text-yellow'>一、角色处理</div>
+  <div>1、同一个账号若在3个大区均有角色，合并后所有的角色将全部合并到<桃园结义>。</div>
+  <div>2、同名角色将被系统添加特殊标识符号，并为其提供临时改名服务。</div>
+  <div class='text-yellow'>二、军团处理</div>
+  <div>1、同名军团将被系统添加特殊标识符号，军团长可将军团进行临时重命名。</div>
+  <div class='text-yellow'>三、寄卖处理</div>
+  <div>1、为确保道具安全，我们将在2025年7月06日10:00暂停所有的寄卖上架。</div>
+  <div>2、在2025年7月10日10:00维护之前，请提前收取掉所有下架邮件！</div>
+  <div class='text-yellow'>四、邮件处理</div>
+  <div>1、请所有玩家务必在合服之前收取所有带有道具的邮件，否则将会有丢失风险！</div>
+  <div class='text-yellow'>五、排行榜处理</div>
+  <div>1、服务器合并后，所有排行榜都将依据合并后的角色数据重新排名。</div>
+  <div class='text-yellow'>六、发布任务处理</div>
+  <div>1、为确保道具安全，我们将在2025年7月06日10:00暂停发布任务功能。</div>
+  <br/>
+  <div class='font-600'>【7月3日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、提升物理职业的基础命中。</div>
+  <div>2、提升物理职业的基础暴击。</div>
+  <br/>
+  <div class='font-600'>【7月2日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、暂停特殊四级、五级、六级翅膀回收。</div>
+  <div>2、新增五级、六级翅膀升级兑换，玩家可以通过积分回收功能中补扭蛋积分差价对翅膀进行升级。</div>
+  <div>3、调整法系职业技能允许<暴击>和<未命中>。</div>
+  <br/>
   <div class='font-600'>【6月25日更新】</div>
   <div class='text-green'>修复BUG：</div>
   <div>1、修复物防、法防显示异常。</div>
@@ -204,7 +232,7 @@ function App() {
             <div className='text'>
               <div onClick={() => onCopy('1050397559')}>1050397559</div>
               <div onClick={() => onCopy('1050752511')}>1050752511</div>
-              <div onClick={() => onCopy('1004937282')}>1004937282</div>
+              <div onClick={() => onCopy('822564753')}>822564753</div>
             </div>
           </div>
           <div className='yellow-card'>
