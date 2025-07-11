@@ -27,7 +27,11 @@ import { toast, ToastContainer } from 'react-toastify'
 const updateList = `
   <div>元神功能正式上线，所有17级以上玩家，完成主线任务《赤兔追风化元神》后即可解锁元神功能，欢迎大家体验。目前仅开放了部分元神内容，包括元神的鉴定、获取，升级等。其余功能将陆续上线，敬请期待。由于元神系统过于庞大且复杂，可能会在体验过程中发现诸多不完善或者有BUG的地方，望大家多多海涵，可在第一时间向我们反馈，感激不尽。</div>
   <br/>
-  <div class='font-600' style='color: #FF8C52;'>《合服详细内容》</div>
+  <div style='color:#FF8C52'>尊敬的玩家：</div>
+  <div>本次合服已经顺利完成，所有玩家数据已全部合并！原来<span class='text-yellow'><群雄逐鹿＞、＜赤壁之战></span>可直接登录<span class='text-yellow'><桃园结义></span>进行游戏。</div>
+  <div>感谢您的等待，祝您游戏愉快，若有任何问题请联系客服处理！</div>
+  <br/>
+  <div class='font-600'>《合服详细内容》</div>
   <div>为提升游戏氛围与玩家体验，我们决定于<span class='text-green'>2025年7月10日10:00</span>，进行服务器合并操作，预计需要1~2天！届时我们将把 <span class='text-yellow'>＜桃园结义>、＜群雄逐鹿>、＜赤壁之战></span> 合并为1个大区，其中<span class='text-yellow'><桃园结义></span>将作为主服务器，另外两个服务器的所有玩家数据将全部并入主服务器中。具体规则如下：</div>
   <div class='text-yellow'>一、角色处理</div>
   <div>1、同一个账号若在3个大区均有角色，合并后所有的角色将全部合并到<桃园结义>。</div>
@@ -43,6 +47,18 @@ const updateList = `
   <div>1、服务器合并后，所有排行榜都将依据合并后的角色数据重新排名。</div>
   <div class='text-yellow'>六、发布任务处理</div>
   <div>1、为确保道具安全，我们将在2025年7月06日10:00暂停发布任务功能。</div>
+  <br/>
+  <div class='font-600'>【7月12日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、开启下一阶段日日签到活动。</div>
+  <div class='text-green'>修复BUG：</div>
+  <div>1、修复词条改成词条<刮骨>效果异常。</div>
+  <div>2、修复交易功能在携带道具超过上限时可能导致的道具异常丢失。</div>
+  <br/>
+  <div class='font-600'>【7月7日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、调整豪杰技能＜王者归来＞的CD，及其动作节奏。</div>
+  <div>2、调整豪杰技能<傲天一式＞的CD，及其动作节奏。</div>
   <br/>
   <div class='font-600'>【7月3日更新】</div>
   <div class='text-yellow'>新增优化：</div>
