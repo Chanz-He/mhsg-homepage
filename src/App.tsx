@@ -246,7 +246,7 @@ function App() {
               <img src={GameGroupImage} />
             </div>
             <div className='text'>
-              <div onClick={() => onCopy('1050397559')}>759232639</div>
+              <div onClick={() => onCopy('759232639')}>759232639</div>
               <div onClick={() => onCopy('1050752511')}>1050752511</div>
               <div onClick={() => onCopy('822564753')}>822564753</div>
             </div>
