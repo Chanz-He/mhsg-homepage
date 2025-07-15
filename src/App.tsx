@@ -25,6 +25,15 @@ import SuccessImage from '@/assets/images/success.png'
 import { toast, ToastContainer } from 'react-toastify'
 
 const updateList = `
+  <div class='font-600'>【7月15日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、优化元神成长功能的界面操作。</div>
+  <div>2、调整<经验BOSS>归属判定,只有进行首次攻击者才能拾取掉落物品。</div>
+  <div>3、调整仙术师技能<宁静致远>的效果持续时间。</div>
+  <div>4、调整元神技能<青龙摆尾>的效果伤害。</div>
+  <div class='text-green'>修复BUG：</div>
+  <div>1、修复元神成长所提升的属性未正常生效。</div>
+  <br/>
   <div>元神功能正式上线，所有17级以上玩家，完成主线任务《赤兔追风化元神》后即可解锁元神功能，欢迎大家体验。目前仅开放了部分元神内容，包括元神的鉴定、获取，升级等。其余功能将陆续上线，敬请期待。由于元神系统过于庞大且复杂，可能会在体验过程中发现诸多不完善或者有BUG的地方，望大家多多海涵，可在第一时间向我们反馈，感激不尽。</div>
   <br/>
   <div style='color:#FF8C52'>尊敬的玩家：</div>
@@ -47,15 +56,6 @@ const updateList = `
   <div>1、服务器合并后，所有排行榜都将依据合并后的角色数据重新排名。</div>
   <div class='text-yellow'>六、发布任务处理</div>
   <div>1、为确保道具安全，我们将在2025年7月06日10:00暂停发布任务功能。</div>
-  <br/>
-  <div class='font-600'>【7月15日更新】</div>
-  <div class='text-yellow'>新增优化：</div>
-  <div>1、优化元神成长功能的界面操作。</div>
-  <div>2、调整<经验BOSS>归属判定,只有进行首次攻击者才能拾取掉落物品。</div>
-  <div>3、调整仙术师技能<宁静致远>的效果持续时间。</div>
-  <div>4、调整元神技能<青龙摆尾>的效果伤害。</div>
-  <div class='text-green'>修复BUG：</div>
-  <div>1、修复元神成长所提升的属性未正常生效。</div>
   <br/>
   <div class='font-600'>【7月12日更新】</div>
   <div class='text-yellow'>新增优化：</div>
