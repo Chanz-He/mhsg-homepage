@@ -48,12 +48,22 @@ const updateList = `
   <div class='text-yellow'>六、发布任务处理</div>
   <div>1、为确保道具安全，我们将在2025年7月06日10:00暂停发布任务功能。</div>
   <br/>
+  <div class='font-600'>【7月15日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、优化元神成长功能的界面操作。</div>
+  <div>2、调整<经验BOSS>归属判定,只有进行首次攻击者才能拾取掉落物品。</div>
+  <div>3、调整仙术师技能<宁静致远>的效果持续时间。</div>
+  <div>4、调整元神技能<青龙摆尾>的效果伤害。</div>
+  <div class='text-green'>修复BUG：</div>
+  <div>1、修复元神成长所提升的属性未正常生效。</div>
+  <br/>
   <div class='font-600'>【7月12日更新】</div>
   <div class='text-yellow'>新增优化：</div>
   <div>1、开启下一阶段日日签到活动。</div>
   <div class='text-green'>修复BUG：</div>
   <div>1、修复词条改成词条<刮骨>效果异常。</div>
   <div>2、修复交易功能在携带道具超过上限时可能导致的道具异常丢失。</div>
+  <div>3、修复武陵农场初级区采集物不刷新。</div>
   <br/>
   <div class='font-600'>【7月7日更新】</div>
   <div class='text-yellow'>新增优化：</div>
