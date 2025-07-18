@@ -25,14 +25,23 @@ import SuccessImage from '@/assets/images/success.png'
 import { toast, ToastContainer } from 'react-toastify'
 
 const updateList = `
-  <div class='font-600'>【7月15日更新】</div>
+  <div class='font-600'>【7月18日更新】</div>
+  <div class='text-yellow'>新增内容：</div>
+  <div>1、新增七擒七纵副本及任务: 约战泸水、再探矿洞、银坑猛兽、决战藤甲。</div>
+  <br/>
+  <div class='font-600'>【7月17日更新】</div>
   <div class='text-yellow'>新增优化：</div>
-  <div>1、优化元神成长功能的界面操作。</div>
-  <div>2、调整<经验BOSS>归属判定,只有进行首次攻击者才能拾取掉落物品。</div>
-  <div>3、调整仙术师技能<宁静致远>的效果持续时间。</div>
-  <div>4、调整元神技能<青龙摆尾>的效果伤害。</div>
+  <div>1、新增商品:<高级元神成长丸>，使购买更加便捷。</div>
+  <div>2、提升包裹可扩充上限为200格。</div>
+  <br/>
+   <div class='font-600'>【7月16日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、新增元神战力计算。</div>
+  <div>2、调整所有<抗性修炼>60级后，每次提升将获得额外的攻击或防御提升。</div>
+  <div>3、调整所有<精华提升>60级后，每次提升将获得额外的攻击或防御提升。</div>
+  <div>4、调整红色品质的<搜魂暗眼>、<噬神幽瞳>、<霸王重瞳>、<九曲瑰瞳>必定获得属性的条数，从4条增加至7条。</div>
   <div class='text-green'>修复BUG：</div>
-  <div>1、修复元神成长所提升的属性未正常生效。</div>
+  <div>1、修复元神特技<健壮>切线后无限叠加异常。</div>
   <br/>
   <div>元神功能正式上线，所有17级以上玩家，完成主线任务《赤兔追风化元神》后即可解锁元神功能，欢迎大家体验。目前仅开放了部分元神内容，包括元神的鉴定、获取，升级等。其余功能将陆续上线，敬请期待。由于元神系统过于庞大且复杂，可能会在体验过程中发现诸多不完善或者有BUG的地方，望大家多多海涵，可在第一时间向我们反馈，感激不尽。</div>
   <br/>
@@ -56,6 +65,15 @@ const updateList = `
   <div>1、服务器合并后，所有排行榜都将依据合并后的角色数据重新排名。</div>
   <div class='text-yellow'>六、发布任务处理</div>
   <div>1、为确保道具安全，我们将在2025年7月06日10:00暂停发布任务功能。</div>
+  <br/>
+  <div class='font-600'>【7月15日更新】</div>
+  <div class='text-yellow'>新增优化：</div>
+  <div>1、优化元神成长功能的界面操作。</div>
+  <div>2、调整<经验BOSS>归属判定,只有进行首次攻击者才能拾取掉落物品。</div>
+  <div>3、调整仙术师技能<宁静致远>的效果持续时间。</div>
+  <div>4、调整元神技能<青龙摆尾>的效果伤害。</div>
+  <div class='text-green'>修复BUG：</div>
+  <div>1、修复元神成长所提升的属性未正常生效。</div>
   <br/>
   <div class='font-600'>【7月12日更新】</div>
   <div class='text-yellow'>新增优化：</div>
@@ -211,7 +229,7 @@ const showNotification = (message) => {
       closeOnClick: true,
     }
   )
-} 
+}
 
 
 function App() {
@@ -222,9 +240,9 @@ function App() {
     window.location.href = url
   }
 
-  const onCopy = async(str, isInvitationCode = false) => {
+  const onCopy = async (str, isInvitationCode = false) => {
     // @ts-ignore
-    window.gtag('event', isInvitationCode? `copy_invitation_code`: `copy_qq_group_id`);
+    window.gtag('event', isInvitationCode ? `copy_invitation_code` : `copy_qq_group_id`);
     await navigator.clipboard.writeText(str);
     showNotification('复制成功')
   }
@@ -281,7 +299,7 @@ function App() {
               <div className='img-8'>
                 <img src={YellowImg8Image} />
               </div>
-              <div className='img-9'onClick={() => onCopy('R99999')}>
+              <div className='img-9' onClick={() => onCopy('R99999')}>
                 <img src={YellowImg9Image} />
               </div>
               <div className='img-10'>
@@ -301,7 +319,7 @@ function App() {
               <div className='img-2'>
                 <img src={PurpleImg2Image} />
               </div>
-              <div className='split-line'/>
+              <div className='split-line' />
               <div className='img-3'>
                 <img src={PurpleImg3Image} />
               </div>
@@ -333,8 +351,8 @@ function App() {
         className="toast-container"
         bodyClassName="toast-body"
         hideProgressBar
-        icon={ false }
-        pauseOnHover={ false }
+        icon={false}
+        pauseOnHover={false}
         theme="dark"
         stacked
         autoClose={3000}
