@@ -25,6 +25,10 @@ import SuccessImage from '@/assets/images/success.png'
 import { toast, ToastContainer } from 'react-toastify'
 
 const updateList = `
+  <div class='font-600'>【7月19日更新】</div>
+  <div class='text-yellow'>新增内容：</div>
+  <div>1、新增称号属性,使得大部分本该拥有加成效果的称号正常生效</div>
+  <br/>
   <div class='font-600'>【7月18日更新】</div>
   <div class='text-yellow'>新增内容：</div>
   <div>1、新增七擒七纵副本及任务: 约战泸水、再探矿洞、银坑猛兽、决战藤甲。</div>
